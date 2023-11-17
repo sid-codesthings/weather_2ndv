@@ -25,8 +25,8 @@ def get_weatherdata():
     response = requests.get(url,params=param) 
     # requests is used to get data from a url whereas request is used to get data from a form.
     data = response.json()
-    #city = data['name']
-    return f"data : {data}" #, city : {city}" # here 'f' means formatted string.
+    city = data['name']
+    return f"data : {data} , city : {city}" # here 'f' means formatted string.
 
 
 if __name__ == '__main__':
